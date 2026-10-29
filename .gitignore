@@ -1,0 +1,62 @@
+# Dependencies
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Secrets and credentials
+secrets/
+credentials/
+*.pem
+*.key
+
+# Python virtual environments
+.python-version
+
+# Build
+dist/
+build/
+out/
+.next/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Uploads
+uploads/
+processed/
+
+# Logs
+logs/
+*.log
+
+# Database
+*.db
+*.sqlite3
+
+# Cache
+.cache/
+.pytest_cache/
+
+# IDE
+.env.local.example
+
+# Generated output and TypeScript cache
+*.out
+*.tsbuildinfo

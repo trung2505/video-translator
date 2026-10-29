@@ -1,0 +1,17 @@
+{
+  "name": "video-translator",
+  "version": "1.0.0",
+  "description": "Full-stack application for translating Chinese videos to Vietnamese",
+  "scripts": {
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && python -m uvicorn app.main:app --reload --host 0.0.0.0 --port 8000",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "build:frontend": "cd frontend && npm run build",
+    "build:backend": "cd backend && pip install -r requirements.txt",
+    "docker:up": "docker-compose -f docker/docker-compose.yml up -d",
+    "docker:down": "docker-compose -f docker/docker-compose.yml down"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}

@@ -1,0 +1,9 @@
+services:
+  worker:
+    gpus: all
+    environment:
+      - OMNIVOICE_DEVICE=cuda
+    command:
+      - sh
+      - -c
+      - celery -A app.workers.celery_app.celery_app worker --loglevel=info --concurrency=1
